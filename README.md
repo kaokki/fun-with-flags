@@ -1,4 +1,4 @@
-![Fun with flags screenshot](public/fun-with-flags-screenshot.png)
+![Fun with flags screenshot](public/flags-screenshot.png)
 
 # Fun with Flags
 
