@@ -23,6 +23,15 @@ const Select = ({ options, selected, setSelected }: Props) => {
     }
   }, [isOpen])
 
+  const handleClickOutside = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  });
+
   const handleButtonKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     if(event.key === "Enter" || event.key === "Space"){
       event.preventDefault();
